@@ -1,0 +1,196 @@
+body{
+    font-family: "Mate SC", serif;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gold;
+}
+.container-fluid{
+    height: 900px;
+}
+.row{
+    background-color: lightsalmon;
+}
+.col{
+    background-color: white;
+}
+.col1{
+  height: 100px;
+  background-color: rgb(255, 237, 222);
+}
+.col1 > p{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+.col2{
+    height: 350px;
+    background-color: rgb(255, 237, 222);
+    
+}
+.col2 > p{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.cuisinecontainer{
+    height: 270px;
+    width: 89%;
+    display: flex;
+    gap: 3%;
+    overflow-x: auto;
+    margin: 0 auto;
+    position: relative;
+    top:-20px;
+}
+.cuisine{
+    height: 210px;
+    min-width: 210px;
+    border-radius: 50%;  
+}
+div.cuisine  p{
+    font-size: 2rem ;
+}
+.cuisine > div {
+    font-size: 2rem;
+    position: relative;
+    top: 215px;
+    text-align: center;
+}
+#cuisine1{
+    background-image: url(./Assets/indianCuisine.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#cuisine2{
+    background-image: url(./Assets/ItalianCuisine.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}
+#cuisine3{
+    background-image: url(./Assets/ThaiCuisine.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#cuisine4{
+    background-image: url(./Assets/FrenchCuisine.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}
+#cuisine5{
+    background-image: url(./Assets/GreekCuisine.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}
+#cuisine6{
+    background-image: url(./Assets/JapaneseCuisine.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}
+.col3{
+  height: 700px;
+  background-color: rgb(255, 237, 222);
+}
+.col3 > p{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1%;
+    height: 540px;
+    background-color: rgb(255, 237, 222);
+}
+.menu .col{
+    background-color: #f8b7f9;
+    border-radius: 20px;
+    height: 580px;
+    min-width: 380px;
+}
+.heading{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.foodList > p{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.footer{
+    height: 100px;
+    background-color: rgb(255, 237, 222);
+}
+.footer p{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+.footer a{
+    color: black
+}
+.footer a:hover{
+    color: rgb(0, 2, 3);
+    font-weight: bold;
+}
+
+@media  screen and (max-width:768px) {
+    .col1 > p{
+        font-size: 2rem;
+    }
+    .col2{
+        height: 270px;
+    }
+    .col2 > p{
+        font-size: 2rem;
+    }
+    .cuisinecontainer{
+        height: 200px;
+        display: flex;
+        gap: 3%;
+        overflow-x: auto;
+    }
+    .cuisine{
+        height: 150px;
+        min-width: 150px;
+        border-radius: 50%;  
+    }
+    .cuisine div{
+        position: relative;
+        top: 150px;
+        margin: 0;
+    }
+    .col3{
+        height: 1100px;
+    }
+    .col3 p{
+        font-size: 2rem;
+    }
+    .menu .col{
+        min-width: 370px;
+        height: 490px;
+        margin-bottom: 25px;
+        border-radius: 30px;
+    }
+    div.cuisine  p{
+        font-size: 1.5rem;
+    }
+    .foodList{
+        text-align: center;
+    }
+    .foodList p{
+        font-size: 1.5rem;
+    }
+    p.heading{
+        font-size: 1.7rem;
+    }
+    .footer p{
+        font-size: 1.5rem;
+    }
+
+}
